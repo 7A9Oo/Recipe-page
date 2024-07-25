@@ -3,7 +3,7 @@
 /* start rules */
 * {
     box-sizing: border-box;
-    font-family:  'Outfit', 'Young serif';
+    font-family:  'Outfit', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,9 @@
     --brown-800: hsl(14, 45%, 36%);
     --rose-800 :  hsl(332, 51%, 32%);
     /* padding varibale */
-    --container-padding : 30px
+    --small-padmar :20px;
+    --medium-padmar : 30px;
+    --large-padmar : 40px;
 }
 /*  end rules */
 
@@ -40,10 +42,141 @@
 }
 
 .parent img  {
-    width: 375px;
-    height: 170px;
+    width: 100%;
+    height: 100%;
 }
 .container {
-    padding-left: var(--container-padding);
-    padding-right: var(--container-padding);
+    padding-left: var(--medium-padmar);
+    padding-right: var(--medium-padmar);
 }
+
+.parent .head h1{
+    font-family: 'Young Serif';
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: var(--large-padmar);  
+}
+
+.parent .head p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--stone-600);
+}
+/* start preparation */
+.parent .head .preparation {
+    background-color: var(--rose-50);
+    padding: var(--medium-padmar);
+    margin-top: var(--medium-padmar);
+    border-radius: 10px;
+}
+
+.parent .head .preparation h3 {
+    color: var(--rose-800);
+}
+
+
+.parent .head .preparation ul  {
+    list-style: square outside;
+    color: var(--rose-800);
+    margin-top: var(--small-padmar);
+    padding-left: var(--medium-padmar);
+    
+}
+
+.parent .head .preparation ul li {
+    color: var(--stone-600);
+    line-height: 150%;
+}
+.parent .head .preparation ul li::marker{
+    color: var(--rose-800);
+}
+.parent .head .preparation ul li span,
+.parent .instructions li span{
+    color: var(--stone-600);
+    font-weight: 700;
+}
+
+/* end preparation */
+/* start ingredients  */
+.parent .ingredients {
+    margin-top: var(--medium-padmar);
+
+}
+
+.parent .ingredients h2,
+.parent .instructions h2,
+.parent .nutrition h2 {
+    font-family: 'Young Serif';
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: var(--large-padmar); 
+    color: var(--brown-800);
+}
+
+.parent .ingredients ul {
+    list-style: disc outside;
+    margin-top: var(--medium-padmar);
+    padding-left: var(--medium-padmar);
+}
+
+.parent .ingredients li {
+    color:  var(--stone-600);
+    line-height: 150%;
+}
+.parent .ingredients li::marker,
+.parent .instructions li::marker {
+    color: var(--brown-800);
+}
+
+.parent .ingredients hr,
+.parent .instructions hr {
+    border-color: var(--stone-100);
+    margin-top: var(--medium-padmar);
+}
+/* end ingredients */
+/* start instructions */
+.parent .instructions {
+    margin-top: var(--medium-padmar);
+}
+
+.parent .instructions ol{
+    margin-top: var(--medium-padmar);
+    list-style-position: outside;
+    padding-left: var(--small-padmar);
+}
+.parent .instructions li {
+    color:  var(--stone-600);
+    line-height: 150%;
+    padding-left: var(--small-padmar);
+}
+/*  end instructions */
+/*  start nutrition */
+.parent .nutrition p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--stone-600);
+    margin-top: var(--medium-padmar);
+}
+.parent .nutrition table{
+    margin-top: var(--medium-padmar);
+    margin-bottom: var(--large-padmar);
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.parent .nutrition table tr td {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--stone-150);
+    padding: var(--small-padmar);
+}
+.parent .nutrition table tr:last-child td {
+    border: none;
+}
+.parent .nutrition table tr td span{
+    color: var(--brown-800);
+    font-weight: 700;
+}
+/*  end nutrition */
