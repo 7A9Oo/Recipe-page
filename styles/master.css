@@ -16,6 +16,8 @@
     --rose-50: hsl(330, 100%, 98%);
     --brown-800: hsl(14, 45%, 36%);
     --rose-800 :  hsl(332, 51%, 32%);
+    /* padding varibale */
+    --container-padding : 30px
 }
 /*  end rules */
 
@@ -31,3 +33,17 @@
 
 /* design mobile first */
 
+.parent {
+    background-color: var(--white);
+    width: 100%;
+
+}
+
+.parent img  {
+    width: 375px;
+    height: 170px;
+}
+.container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
