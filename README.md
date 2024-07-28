@@ -1,10 +1,10 @@
-# Frontend Mentor - Social Media Links
+# Frontend Mentor - Recipe page
 
-This is a solution to the [Social Media Links challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Recipe page Links challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
-- [Frontend Mentor - Social Media Links](#frontend-mentor---social-media-links)
+- [Frontend Mentor - Recipe page](#frontend-mentor---Recipe page)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [Screenshot](#screenshot)
@@ -22,13 +22,14 @@ This is a solution to the [Social Media Links challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![QR code Component](./images/final%20capture.png)
+![QR code Component](./images/1.png)
+![QR code Component](./images/2.png)
 
 
 ### Links
 
-- Solution URL: [Social Media Links](https://github.com/7A9Oo/Social-Media-Links)
-- Live Site URL: [Social Media Links](https://social-media-links-indol.vercel.app)
+- Solution URL: [Recipe page](https://github.com/7A9Oo/Recipe-page)
+- Live Site URL: [Recipe page](https://recipe-page-seven-liart.vercel.app/)
 
 ## My process
 
@@ -40,14 +41,39 @@ This is a solution to the [Social Media Links challenge on Frontend Mentor](http
 
 ### What I learned
 
-in this project i learned how to import font using css import ,
-and deal with inline elements  
+in this project i learned how to use media queries so i design first for mobile after that i work with desktop 
 
 
  code snippets:
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* media for desktop */
+@media (min-width:376px){
+    body {
+        background-color: var(--stone-100);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+    
+    .parent {
+        width: 740px;
+        background-color: var(--white);  
+        border-radius: 20px; 
+    }
+    .parent .image {
+        padding-right: var(--large-padmar);
+        padding-left: var(--large-padmar);
+        padding-top: var(--large-padmar);
+    }
+    .parent img  {
+        border-radius: 20px;
+        
+    }
+}
+/* end media for desktop */
 ```
 
 ### Useful resources
